@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4ef">
+  <meta name="description" content="Un espacio para renovar tu estilo y cuidar tu cabello. Conocé nuestros servicios de peluquería y solicitá tu turno por WhatsApp.">
+  <title>Lúmina Estudio | Peluquería y cuidado capilar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topbar"><span>UN ESPACIO PARA VOS</span><span>Atención personalizada <i>✳</i> Turnos con reserva previa</span></div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Lúmina Estudio, inicio"><span class="brand-mark" aria-hidden="true">L</span><span class="brand-word">Lúmina<small>ESTUDIO DE PELO</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menú"><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav" aria-label="Navegación principal"><a href="#servicios">Servicios</a><a href="#estudio">El estudio</a><a href="#preguntas">Preguntas</a><a class="nav-book" href="#turnos">Reservar turno <span>↗</span></a></nav>
+  </header>
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-copy"><span class="eyebrow"><i></i> PELO, ESTILO Y BIENESTAR</span><h1>Sentite bien<br>en tu <em>propio estilo.</em></h1><p>Un espacio para renovar tu look, cuidar tu pelo y salir sintiéndote más vos.</p><a class="button button-dark" href="#turnos">Encontrá tu próximo turno <span>↗</span></a><div class="hero-note"><span class="note-line"></span><span>Un buen cambio empieza<br>con una buena charla.</span></div></div>
+      <div class="hero-image"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1400&q=88" alt="Profesional trabajando en el cabello de una clienta" fetchpriority="high"><div class="hero-image-caption"><span>01 / LÚMINA ESTUDIO</span><span>Tu momento, tu estilo.</span></div><div class="hero-seal"><span>BUEN PELO<br>BUENA ENERGÍA</span><b>✳</b></div></div>
+    </section>
+
+    <section class="values-strip" aria-label="Nuestra forma de trabajar"><div><span class="value-number">01</span><span><b>Te escuchamos</b><small>Primero entendemos lo que buscás</small></span></div><div><span class="value-number">02</span><span><b>Te asesoramos</b><small>Elegimos juntas el mejor camino</small></span></div><div><span class="value-number">03</span><span><b>Cuidamos tu pelo</b><small>El proceso importa tanto como el look</small></span></div></section>
+
+    <section class="services section-pad" id="servicios">
+      <div class="section-heading"><div><span class="eyebrow">NUESTROS SERVICIOS</span><h2>Un ritual para cada <em>versión tuya.</em></h2></div><p>La propuesta y el valor se confirman según el largo, el tipo de cabello y el resultado que quieras lograr.</p></div>
+      <div class="service-grid">
+        <article class="service-card service-featured"><span class="service-index">01 — CORTE</span><div class="service-icon" aria-hidden="true">✂</div><h3>Corte &amp; brushing</h3><p>Un corte pensado para tu estilo, tu textura y tu rutina.</p><div class="service-bottom"><span>Duración estimada · 45–75 min</span><button data-book-service="Corte & brushing" aria-label="Solicitar turno para corte y brushing">Reservar ↗</button></div></article>
+        <article class="service-card"><span class="service-index">02 — COLOR</span><div class="service-icon" aria-hidden="true">◌</div><h3>Coloración</h3><p>Color, cobertura de raíces y cambios de tono con asesoramiento previo.</p><div class="service-bottom"><span>Duración estimada · 90–180 min</span><button data-book-service="Coloración" aria-label="Solicitar turno para coloración">Reservar ↗</button></div></article>
+        <article class="service-card"><span class="service-index">03 — ILUMINACIÓN</span><div class="service-icon" aria-hidden="true">✳</div><h3>Mechas &amp; balayage</h3><p>Dimensión y luz que acompañan tu base y el resultado que buscás.</p><div class="service-bottom"><span>Duración estimada · 150–240 min</span><button data-book-service="Mechas y balayage" aria-label="Solicitar turno para mechas o balayage">Reservar ↗</button></div></article>
+        <article class="service-card"><span class="service-index">04 — TRATAMIENTOS</span><div class="service-icon" aria-hidden="true">〰</div><h3>Cuidado capilar</h3><p>Hidratación y tratamientos adaptados a las necesidades de tu cabello.</p><div class="service-bottom"><span>Duración estimada · 45–90 min</span><button data-book-service="Tratamiento capilar" aria-label="Solicitar turno para tratamiento capilar">Reservar ↗</button></div></article>
+        <article class="service-card"><span class="service-index">05 — PEINADOS</span><div class="service-icon" aria-hidden="true">⌁</div><h3>Peinados &amp; eventos</h3><p>Un look especial para acompañarte en una ocasión importante.</p><div class="service-bottom"><span>Duración estimada · 45–90 min</span><button data-book-service="Peinado para evento" aria-label="Solicitar turno para peinado de evento">Reservar ↗</button></div></article>
+        <article class="service-card service-consult"><span class="service-index">¿NO SABÉS POR DÓNDE EMPEZAR?</span><div class="service-icon" aria-hidden="true">♡</div><h3>Primero, conversemos.</h3><p>Contanos qué te gustaría cambiar y te ayudamos a elegir el servicio indicado.</p><div class="service-bottom"><span>Asesoramiento personalizado</span><a href="#turnos">Hablemos ↗</a></div></article>
+      </div>
+    </section>
+
+    <section class="about" id="estudio"><div class="about-photo"><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=85" alt="Interior cálido y luminoso de un estudio de peluquería" loading="lazy"><span class="photo-tag">UN ESPACIO PARA BAJAR UN CAMBIO</span></div><div class="about-copy"><span class="eyebrow">EL ESTUDIO</span><h2>Más que un cambio de look, <em>un momento para vos.</em></h2><p>En Lúmina creemos que cada pelo tiene su historia. Por eso, antes de empezar, conversamos sobre lo que te gusta, lo que necesitás y cómo querés sentirte.</p><p>Trabajamos con una mirada cercana y honesta: te contamos qué es posible, cómo cuidar el resultado y qué opciones se adaptan mejor a tu cabello.</p><a class="text-link" href="#turnos">Conocé el estudio y reservá <span>↗</span></a><div class="about-stamp" aria-hidden="true"><span>ESTILO<br>CONSCIENTE</span><b>✳</b></div></div></section>
+
+    <section class="experience section-pad"><div class="experience-heading"><span class="eyebrow">NUESTRA FORMA DE ACOMPAÑARTE</span><h2>Un proceso cuidado,<br><em>de principio a fin.</em></h2></div><div class="experience-list"><article><span>01</span><div><h3>Escuchamos tu idea</h3><p>Nos contás qué te gustaría y qué esperás de tu visita.</p></div><b>＋</b></article><article><span>02</span><div><h3>Te damos opciones claras</h3><p>Revisamos posibilidades, mantenimiento y tiempos.</p></div><b>＋</b></article><article><span>03</span><div><h3>Creamos tu próximo look</h3><p>Avanzamos con atención en cada paso del servicio.</p></div><b>＋</b></article><article><span>04</span><div><h3>Te llevás tips para cuidarlo</h3><p>Compartimos recomendaciones para acompañar el resultado en casa.</p></div><b>＋</b></article></div></section>
+
+    <section class="booking" id="turnos"><div class="booking-intro"><span class="eyebrow">RESERVAS</span><h2>Tu próximo momento<br><em>empieza acá.</em></h2><p>Completá tus datos y contanos qué servicio te interesa. Te escribimos por WhatsApp para confirmar disponibilidad y coordinar los detalles.</p><div class="booking-contact"><span class="contact-icon">✳</span><span><b>¿Tenés dudas antes de reservar?</b><small>Escribinos y te orientamos con gusto.</small></span></div><a class="text-link" href="#" id="bookingWhatsApp">Consultar por WhatsApp <span>↗</span></a></div>
+      <form class="booking-form" id="bookingForm">
+        <div class="form-heading"><span>01 — SOLICITUD DE TURNO</span><small>Los campos con * son obligatorios</small></div>
+        <label class="field field-full">¿Qué servicio te interesa? *<select name="service" id="serviceSelect" required><option value="" disabled selected>Elegí un servicio</option><option>Corte & brushing</option><option>Coloración</option><option>Mechas y balayage</option><option>Tratamiento capilar</option><option>Peinado para evento</option><option>Necesito asesoramiento</option></select></label>
+        <div class="form-row"><label class="field">Día que preferís *<input type="date" name="date" id="dateInput" required></label><label class="field">Horario aproximado *<select name="time" id="timeSelect" required><option value="" disabled selected>Elegí un horario</option></select></label></div>
+        <div class="form-row"><label class="field">Tu nombre *<input type="text" name="name" placeholder="Cómo te llamás" autocomplete="name" required maxlength="70"></label><label class="field">Tu WhatsApp *<input type="tel" name="phone" placeholder="Código de área y número" autocomplete="tel" required maxlength="25"></label></div>
+        <label class="field field-full">¿Querés contarnos algo más? <textarea name="notes" rows="3" placeholder="Por ejemplo: largo del cabello, idea de color o una consulta" maxlength="500"></textarea></label>
+        <button class="button button-dark submit-booking" type="submit">Solicitar turno por WhatsApp <span>↗</span></button>
+        <p class="form-privacy">Esta solicitud no confirma una reserva. Coordinaremos el horario con vos por WhatsApp. Tus datos no se guardan en esta página.</p>
+      </form>
+    </section>
+
+    <section class="faq section-pad" id="preguntas"><div class="section-heading"><div><span class="eyebrow">ANTES DE TU VISITA</span><h2>Preguntas que suelen <em>aparecer.</em></h2></div><p>Si necesitás algo más, escribinos y te ayudamos.</p></div><div class="faq-list"><details><summary>¿Cómo confirmo mi turno?<span>＋</span></summary><p>Completá el formulario de reserva. Se abrirá WhatsApp con tu solicitud y coordinaremos con vos la disponibilidad. El turno queda confirmado cuando recibís nuestra respuesta.</p></details><details><summary>¿Cuánto cuesta cada servicio?<span>＋</span></summary><p>El valor depende del servicio, el largo y el trabajo necesario. Te damos una orientación antes de reservar y confirmamos el presupuesto durante la consulta.</p></details><details><summary>¿Qué hago si no sé qué servicio elegir?<span>＋</span></summary><p>Elegí “Necesito asesoramiento” en el formulario y contanos qué resultado tenés en mente. Te vamos a orientar antes de definir el servicio.</p></details><details><summary>¿Puedo cambiar o cancelar mi turno?<span>＋</span></summary><p>Sí. Escribinos por WhatsApp con anticipación para que podamos recoordinar el horario.</p></details></div></section>
+
+    <section class="closing-banner"><div><span class="eyebrow">TU PELO, TU HISTORIA</span><h2>¿Lista para sentirte <em>increíble?</em></h2></div><a class="button button-light" href="#turnos">Reservá tu momento <span>↗</span></a><span class="closing-flower" aria-hidden="true">✳</span></section>
+  </main>
+  <footer class="footer"><a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true">L</span><span class="brand-word">Lúmina<small>ESTUDIO DE PELO</small></span></a><span class="footer-copy">Un espacio para vos. <span>© <span id="year"></span> Lúmina Estudio</span></span><div class="footer-links"><a href="#servicios">Servicios</a><a href="#turnos">Reservas</a><a href="#preguntas">Preguntas</a></div></footer>
+  <a class="floating-whatsapp" href="#" id="floatingWhatsApp" aria-label="Escribinos por WhatsApp"><span>↗</span><b>WhatsApp</b></a>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
