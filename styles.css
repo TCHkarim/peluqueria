@@ -88,3 +88,7 @@
   .footer-copy{grid-column:1;grid-row:auto}
   .footer-links{flex-wrap:wrap}
 }
+/* Evita que iOS convierta el adorno de marca en un emoji de color */
+.closing-flower{display:grid;place-items:center;line-height:0;pointer-events:none}
+.closing-flower svg{display:block;width:1em;height:1em;color:#ffffff0a}
+@media(max-width:640px){.closing-flower{display:none}}
