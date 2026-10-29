@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf-token" content="{{ csrf_token }}">
+  <meta name="theme-color" content="#f7f4ef">
+  <title>Agenda privada | Lúmina Estudio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/admin.css">
+</head>
+<body>
+  <header class="admin-header"><a class="brand" href="/"><span class="brand-mark">L</span><span>Lúmina<small>AGENDA PRIVADA</small></span></a><a class="public-link" href="/">Volver al sitio ↗︎</a></header>
+  <main class="admin-main">
+    <section class="login-card" id="loginView" hidden>
+      <span class="eyebrow">ACCESO DEL SALÓN</span><h1>Ingresá a tu agenda.</h1><p>Panel privado para organizar y responder solicitudes de turno.</p>
+      <form id="loginForm"><label>Usuario<input name="username" autocomplete="username" required maxlength="80"></label><label>Contraseña<input name="password" type="password" autocomplete="current-password" required maxlength="200"></label><button class="primary-button" type="submit">Ingresar</button><p class="form-message" id="loginMessage" role="alert"></p></form>
+    </section>
+    <section id="dashboardView" hidden>
+      <div class="page-heading"><div><span class="eyebrow">ORGANIZACIÓN DEL ESTUDIO</span><h1>Agenda de turnos</h1><p>Las solicitudes nuevas quedan pendientes hasta que las confirmes.</p></div><button id="logoutButton" class="ghost-button">Cerrar sesión</button></div>
+      <div class="toolbar"><label>Fecha<input type="date" id="filterDate"></label><label>Estado<select id="filterStatus"><option>Todos</option><option>Pendiente</option><option>Confirmado</option><option>Realizado</option><option>Cancelado</option></select></label><button id="showAllButton" class="ghost-button">Ver todas las fechas</button></div>
+      <div class="stats" id="stats"></div><div class="admin-message" id="adminMessage" role="status" aria-live="polite"></div><div class="booking-list" id="bookingList"></div>
+    </section>
+  </main>
+  <script src="/admin.js"></script>
+</body>
+</html>
