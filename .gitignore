@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+salon_turnos.sqlite3
+salon_turnos.sqlite3-shm
+salon_turnos.sqlite3-wal
+instance/
+.wrangler/
+node_modules/
